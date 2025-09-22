@@ -36,8 +36,8 @@ if uploaded_image is not None:
   class_names = [model.names[i] for i in class_ids]
   
   # Count plate
-Plate_count = class_names.count("Plate")
-  st.write(f"Number of Plate detected: **{Plate_count}**")
+people_count = class_names.count("people")
+  st.write(f"Number of people detected: **{people_count}**")
 
 
 
